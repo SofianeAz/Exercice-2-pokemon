@@ -1,0 +1,185 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* card body */
+@media screen and (min-width: 768px) {
+    .pokemon-card{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pokemon-card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* select-menu */
+@media screen and (min-width: 768px) {
+    .menu-container{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        background-color: rgb(46, 154, 216);
+        padding: 1%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu-container{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        background-color: rgb(46, 154, 216);
+        padding: 1%;
+    }  
+}
+
+.pokemon-select {
+    background-color: inherit;
+    color: #fafafa;
+    position: relative;
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: 300;
+    border: none;
+}
+
+.triangle{
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #fafafa;
+        margin-left: 10px;
+}
+
+/* card */
+
+@media screen and (min-width: 768px) {
+    .pokemon-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 50%;
+        border: 1px rgba(0, 0, 0, 0.37) solid;
+    }
+    
+    .pokemon-picture{
+        width: 50%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .pokemon-description{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 400px;
+       text-align: center;
+       width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .pokemon-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 90%;
+        border: 1px rgba(0, 0, 0, 0.37) solid;
+    }
+    
+    .pokemon-picture{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    .pokemon-description{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: auto;
+       text-align: center;
+       width: 100%;
+    }
+    
+}
+
+
+
+/* link */
+
+
+@media screen and (min-width: 768px) {
+    .link-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        width: 50%;
+        padding: 0.5%;
+        border: 1px rgba(0, 0, 0, 0.37) solid;
+    }
+}
+@media screen and (max-width: 768px) {
+    .link-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        width: 90%;
+        padding: 0.5%;
+        border: 1px rgba(0, 0, 0, 0.37) solid;
+    }
+}
+
+
+.pokemon-link{
+    margin-left: 10px;
+}
+
+.pokemon-link > span {
+    margin-left: 10px;
+}
+
+.triangle-right{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+
+/* hiding the default select arrow down */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
